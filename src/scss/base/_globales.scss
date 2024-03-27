@@ -1,0 +1,53 @@
+@use 'variables' as v; 
+@use 'mixins' as m; 
+
+html {
+    font-size: 16px;
+}
+  
+body {
+    font-family: v.$fontPrimary;
+    font-size: 1rem;
+}
+p {
+    color: v.$black;
+    font-size: 1.25rem;
+    line-height: 2;
+}
+.contenedor {
+    inline-size: 95%;
+    max-inline-size: 75rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-inline-size: 100%;
+    vertical-align: bottom;
+}
+
+h1, h2, h3 {
+    margin: 0 0 .125rem  0 ;
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+.seccion {
+    padding: 1.875rem 0;
+    @include m.tablet { 
+        padding: 5rem 0;
+    }
+}

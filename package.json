@@ -1,0 +1,36 @@
+{
+  "name": "podcast",
+  "version": "1.0.0",
+  "description": "Aprendiendo CS GRID, SASS, Gulp y mas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Devchris256/podcast.git"
+  },
+  "author": "Christina Sarai Atoche Pascual",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devchris256/podcast/issues"
+  },
+  "homepage": "https://github.com/Devchris256/podcast#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^6.1.2",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.4.38",
+    "sass": "^1.72.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    ">1%"
+  ]
+}
