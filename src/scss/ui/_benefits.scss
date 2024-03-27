@@ -1,0 +1,28 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.benefits {
+    background: v.$primary;
+
+    &__title {
+        @include m.headingBorder(v.$secundary, v.$white);
+    }
+
+    @include m.tablet{
+        &__content {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        &__details {
+            flex: 1;
+            flex-grow: 1.5;
+        }
+
+        &__img {
+            flex: 1;
+        }
+    } 
+
+}
