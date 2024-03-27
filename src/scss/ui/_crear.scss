@@ -1,0 +1,17 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.create {
+
+    &__title {
+        @include m.headingBorder(v.$secundary, v.$primary)
+    }
+
+    @include m.tablet { 
+        &__content {
+            @include m.grid(2, 1.25rem);
+            align-items: center;
+        }
+    }
+
+}
