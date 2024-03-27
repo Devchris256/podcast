@@ -55,8 +55,7 @@
 
 
 // background image
-@mixin bgImage($url, $colorDegradado) {
-    background-image: linear-gradient( $colorDegradado 0%, $colorDegradado 100% ), url( $url );
+@mixin bgImage {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -86,5 +85,11 @@
         width: calc( 100% + .625rem);
         display: block;
         margin: -.875rem 0 0 0;
+    }
+}
+
+@mixin bgformat ($img, $colorDegradado){
+    @supports(background-image:url($img)){
+        background-image: linear-gradient( $colorDegradado 0%, $colorDegradado 100% ), url($img);
     }
 }

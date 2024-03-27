@@ -1,0 +1,7 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.button {
+    @include m.button(v.$primary, v.$secundary);
+    margin-block-start: 2rem;
+}
