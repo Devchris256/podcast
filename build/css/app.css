@@ -656,7 +656,6 @@ ul {
 }
 
 .testimony {
-  border: 1px solid red;
   background: #84d9bc;
   border: 5px solid #313c4e;
   padding: 1.25rem 1.25rem 1.25rem 5rem;
@@ -690,6 +689,58 @@ ul {
   .testimony:nth-of-type(3) {
     -webkit-margin-start: 30%;
             margin-inline-start: 30%;
+  }
+}
+
+.footer {
+  background: #313c4e;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-block: 3.125rem;
+}
+.footer__img {
+  inline-size: 12.5rem;
+  display: block;
+  margin: 0 auto 3.125rem auto;
+}
+.footer__title {
+  text-transform: uppercase;
+  color: #84d9bc;
+  text-align: start;
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
+}
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.footer__link {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+.footer__copyright {
+  color: #FFFFFF;
+  padding: 0.625rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  max-inline-size: 75rem;
+  -webkit-border-before: 2px solid #84d9bc;
+          border-block-start: 2px solid #84d9bc;
+}
+@media (min-width: 768px) {
+  .footer__content {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer__img {
+    margin: 0;
   }
 }
 
