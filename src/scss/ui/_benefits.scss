@@ -8,11 +8,19 @@
         @include m.headingBorder(v.$secundary, v.$white);
     }
 
+    &__img {
+        transition: rotate .3s scale .3s;
+
+        &:hover {
+            transform: rotate(8deg) scale(1.1);
+        }
+    }
+
     @include m.tablet{
         &__content {
             display: flex;
             align-items: center;
-            gap: 1.25rem;
+            gap: 3rem;
         }
 
         &__details {

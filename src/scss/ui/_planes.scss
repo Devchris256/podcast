@@ -1,0 +1,97 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.plans {
+    background: v.$secundary;
+
+    &__title {
+        @include m.headingBorder(v.$white, v.$primary);
+    }
+
+    &__text {
+        color: v.$white;
+    }
+
+    &__types {
+        display: flex;
+        flex-direction: column;
+    }    
+
+    @include m.tablet {
+        &__types {
+            flex-direction: row;
+            max-inline-size: 52.5rem;
+            margin: 0 auto;
+            margin-block-start: 6.25rem;
+        }
+    }
+}
+
+
+.plan {
+    flex: 1;
+    box-sizing: border-box;
+    inline-size: auto;
+    border: 1px solid #e1e1e1;
+    background-color: v.$white;
+
+    &.inicio {
+        @include m.iconoBg('../img/icono_inicio.svg')
+    }
+
+    &.negocio {
+        order: -1;
+        @include m.iconoBg('../img/icono_negocio.svg');
+        background-color: v.$primary;
+    }
+
+    &.pro {
+        @include m.iconoBg('../img/icono_pro.svg')
+    }
+
+    &__content {
+        padding: 10rem 0 2.25rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__price {
+        margin-block: 1.125rem;
+        font-weight: 700;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+    }
+
+    @include m.tablet {
+        border: none;
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &.negocio {
+            order: unset;
+            margin-block: -3.125rem;
+            background-position: 50% 4.375rem;
+            border-radius: 1.25rem;
+            z-index: 3;
+
+            .plan__content {
+                padding-block-start: 13.125rem;
+            }
+        }
+    }
+
+    
+}
+
+

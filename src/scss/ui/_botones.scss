@@ -6,3 +6,12 @@
     margin-block-start: 2rem;
     box-sizing: border-box;
 }
+
+.button__plan {
+    @extend .button;
+    inline-size: auto;
+}
+
+.button__plan--whiteborder {
+    border: 1px v.$white solid;
+}
