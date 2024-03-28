@@ -16,6 +16,10 @@
         }
     }
 
+    &__image {
+        @include m.img;
+    }
+
     @include m.tablet{
         &__content {
             display: flex;

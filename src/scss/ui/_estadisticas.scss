@@ -5,4 +5,8 @@
     &__title {
         @include m.headingBorder(v.$secundary, v.$primary);
     }
+
+    &__image {
+        @include m.img;
+    }
 }

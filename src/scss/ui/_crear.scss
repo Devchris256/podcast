@@ -3,6 +3,11 @@
 
 .create {
 
+    &__image {
+        inline-size: 100%;
+        height: auto;
+    }
+
     &__title {
         @include m.headingBorder(v.$secundary, v.$primary)
     }

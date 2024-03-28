@@ -93,3 +93,8 @@
         background-image: linear-gradient( $colorDegradado 0%, $colorDegradado 100% ), url($img);
     }
 }
+
+@mixin img {
+    inline-size: 100%;
+    height: 100%;
+}
