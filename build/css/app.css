@@ -617,6 +617,82 @@ ul {
   }
 }
 
+.testimonials__image {
+  text-align: center;
+}
+.testimonials__title {
+  font-size: 2.25rem;
+  display: inline-block;
+  margin-top: 3.125rem;
+  color: #313c4e;
+}
+@media (min-width: 768px) {
+  .testimonials__title {
+    margin-top: 0;
+  }
+}
+.testimonials__title::after {
+  content: "";
+  background-color: #84d9bc;
+  height: 0.625rem;
+  width: calc(100% + 0.625rem);
+  display: block;
+  margin: -0.875rem 0 0 0;
+}
+@media (min-width: 768px) {
+  .testimonials__content {
+    display: grid;
+    align-items: center;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .testimonials__image {
+    grid-column: 1/3;
+  }
+  .testimonials__details {
+    grid-column: 3/6;
+  }
+}
+
+.testimony {
+  border: 1px solid red;
+  background: #84d9bc;
+  border: 5px solid #313c4e;
+  padding: 1.25rem 1.25rem 1.25rem 5rem;
+  border-radius: 0.625rem;
+  position: relative;
+  box-sizing: border-box;
+}
+.testimony::before {
+  content: " ";
+  display: block;
+  inline-size: 3.125rem;
+  block-size: 3.125rem;
+  background-image: url("../img/comilla.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  inset-inline-start: 1.25rem;
+}
+@media (min-width: 768px) {
+  .testimony {
+    max-inline-size: 70%;
+  }
+  .testimony:nth-of-type(1) {
+    -webkit-margin-start: 10%;
+            margin-inline-start: 10%;
+  }
+  .testimony:nth-of-type(2) {
+    -webkit-margin-start: 20%;
+            margin-inline-start: 20%;
+  }
+  .testimony:nth-of-type(3) {
+    -webkit-margin-start: 30%;
+            margin-inline-start: 30%;
+  }
+}
+
 .button, .button__plan {
   background-color: #84d9bc;
   font-size: 1.25rem;
